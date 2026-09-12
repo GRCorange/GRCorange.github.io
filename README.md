@@ -1,5 +1,4 @@
 # GRCorange.github.io
-=======
 # 郭睿宸 · 个人站点
 
 一个可以直接部署到 **GitHub Pages** 的纯静态个人站点，两页结构：
