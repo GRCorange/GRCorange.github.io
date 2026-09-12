@@ -1,0 +1,11 @@
+# 统一换行符为 LF，避免 Windows 开发 / Linux CI 之间来回转换，
+# 导致 Actions 里的 `git status --porcelain` 误判「文件有变化」而多提一次空提交。
+* text=auto eol=lf
+
+# 二进制文件不做任何转换
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.webp  binary
+*.ico   binary
+*.woff2 binary

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>郭睿宸 · 个人主页</title>
+<meta name="description" content="郭睿宸的个人主页与每周复盘。">
+<meta name="author" content="郭睿宸">
+<meta name="theme-color" content="#FAF9F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0F11" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="郭睿宸 · 个人主页">
+<meta property="og:description" content="郭睿宸的个人主页与每周复盘。">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2316171A'/%3E%3Ccircle cx='50' cy='50' r='13' fill='%23B23B2E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- 主题预设：在首次绘制前生效，避免闪白 -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('gr-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ============================ 顶栏 ============================ -->
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__inner">
+    <a class="brand" href="index.html" aria-label="郭睿宸 · 首页">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span>郭睿宸</span>
+      <span class="brand__en">Guo Ruichen</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" href="index.html" aria-current="page">首页</a>
+      <a class="nav__link" href="weekly.html">周报</a>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/>
+        </svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.7 8.7 0 1 0 10.7 10.7Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- =========================== Hero =========================== -->
+  <section class="hero wrap">
+    <div class="hero__grid">
+
+      <div class="hero__intro">
+        <h1 class="hero__name">
+          郭睿宸
+          <span class="hero__name-en">Guo Ruichen</span>
+        </h1>
+
+        <dl class="info">
+          <div class="info__row">
+            <dt class="info__k">电话</dt>
+            <dd class="info__v"><a href="tel:13459421799">13459421799</a></dd>
+          </div>
+          <div class="info__row">
+            <dt class="info__k">QQ</dt>
+            <dd class="info__v">2865709743</dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="hero__portrait">
+        <img src="assets/img/profile.jpg" alt="郭睿宸的证件照" width="480" height="640" decoding="async">
+      </figure>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ 页脚 ============================ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year">2026</span> 郭睿宸</p>
+    <p>
+      <a href="weekly.html">周报</a><span class="footer__dot">·</span>
+      <a href="#main">回到顶部</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

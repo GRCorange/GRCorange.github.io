@@ -1,0 +1,39 @@
+name: 重建周报索引
+
+# 推送到 main 分支、且改动涉及周报源文件时，自动重新生成 weekly/posts.js，
+# 这样即使本地忘记运行 npm run weekly，线上也是最新的。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'weekly/posts/**'
+      - 'scripts/build-weekly.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 生成 weekly/posts.js
+        run: node scripts/build-weekly.mjs
+
+      - name: 若内容有变化则提交回仓库
+        run: |
+          if [ -z "$(git status --porcelain weekly/posts.js)" ]; then
+            echo "weekly/posts.js 无变化，跳过提交。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add weekly/posts.js
+          git commit -m "chore: 自动重建周报索引"
+          git push

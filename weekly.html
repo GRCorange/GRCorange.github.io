@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>周报 · 郭睿宸</title>
+<meta name="description" content="郭睿宸的每周复盘。">
+<meta name="author" content="郭睿宸">
+<meta name="theme-color" content="#FAF9F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0F11" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="周报 · 郭睿宸">
+<meta property="og:description" content="郭睿宸的每周复盘。">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2316171A'/%3E%3Ccircle cx='50' cy='50' r='13' fill='%23B23B2E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('gr-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#timeline">跳到周报列表</a>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__inner">
+    <a class="brand" href="index.html" aria-label="郭睿宸 · 首页">
+      <span class="brand__dot" aria-hidden="true"></span>
+      <span>郭睿宸</span>
+      <span class="brand__en">Guo Ruichen</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" href="index.html">首页</a>
+      <a class="nav__link" href="weekly.html" aria-current="page">周报</a>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/>
+        </svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.7 8.7 0 1 0 10.7 10.7Z"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <h1 class="sr-only">周报 · 每周复盘</h1>
+
+  <!-- ===================== 上传途径说明 ===================== -->
+  <section class="wrap page-head">
+    <details class="howto" open>
+      <summary>怎么发布一篇新周报？（3 步）</summary>
+      <div class="howto__body">
+        <p>本站是纯静态站点，周报以 Markdown 文件形式存在仓库里，推送到 GitHub 后自动生效。</p>
+        <ol>
+          <li>在 <code>weekly/posts/</code> 下新建一个文件，例如 <code>2026-09-19.md</code>。</li>
+          <li>复制 <code>weekly/posts/_TEMPLATE.md</code> 的格式填写标题、日期、标签和正文。</li>
+          <li>在项目根目录运行 <code>npm run weekly</code>，然后提交推送即可。</li>
+        </ol>
+        <p style="margin-top:12px">
+          忘记运行脚本也没关系 —— 推送后 GitHub Actions 会自动重建一次。
+          图片放在 <code>assets/img/</code>，正文里用 <code>![说明](assets/img/xxx.png)</code> 引用。
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===================== 已上传的周报 ===================== -->
+  <section class="wrap">
+    <div class="timeline" id="timeline" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year">2026</span> 郭睿宸</p>
+    <p>
+      <a href="index.html">首页</a><span class="footer__dot">·</span>
+      <a href="#main">回到顶部</a>
+    </p>
+  </div>
+</footer>
+
+<!-- 由 npm run weekly 生成，必须放在 weekly.js 之前 -->
+<script src="weekly/posts.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/weekly.js"></script>
+</body>
+</html>

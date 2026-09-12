@@ -1,0 +1,13 @@
+{
+  "name": "guo-ruichen-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "郭睿宸的个人站点 —— 首页介绍 + 持续更新的每周复盘",
+  "scripts": {
+    "weekly": "node scripts/build-weekly.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

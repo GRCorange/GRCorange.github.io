@@ -1,0 +1,18 @@
+# 依赖（本项目零依赖，留此以防后续引入）
+node_modules/
+
+# 编辑器 / 工具的工作目录，不要提交
+.workbuddy/
+.claude/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+.cache/
