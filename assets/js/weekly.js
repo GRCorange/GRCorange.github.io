@@ -42,7 +42,7 @@
         '运行 <code>npm run weekly</code>，这里就会出现第一篇周报????????。<br>' +
         '（若你刚 clone 下来，说明生成文件尚未构建）' +
         '按上面的说明，在 <code>weekly/posts/</code> 里新建一个 <code>.md</code> 文件，' +
-        '运行 <code>npm run weekly</code>，这里就会出现第一篇！！！！！。<br>' +
+        '运行 <code>npm run weekly</code>，这里就会出现第一篇。<br>' +
         '（若你刚 clone 下来，说明生成文件尚未构建。）' +
       '</div>';
     return;
