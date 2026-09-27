@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>week1 | GRCorange的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1.学习搜索语法如精确匹配：“ ”，强制包含：+，AND,OR等。 2. ai agent我选的deepseek harness 3.markdown语法 4.Burp Suite我用的专业版，加上proxy swithyomegs MV3扩展，可以抓取edge上的请求。在bp的proxy中intercept拦截数据包后，可在HTTP history中分析代理的请求和响应，包括host，statu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="week1">
+<meta property="og:url" content="http://grcorange.github.io/2026/09/25/week1/index.html">
+<meta property="og:site_name" content="GRCorange的个人博客">
+<meta property="og:description" content="1.学习搜索语法如精确匹配：“ ”，强制包含：+，AND,OR等。 2. ai agent我选的deepseek harness 3.markdown语法 4.Burp Suite我用的专业版，加上proxy swithyomegs MV3扩展，可以抓取edge上的请求。在bp的proxy中intercept拦截数据包后，可在HTTP history中分析代理的请求和响应，包括host，statu">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://grcorange.github.io/images/md.png">
+<meta property="article:published_time" content="2026-09-25T07:19:18.000Z">
+<meta property="article:modified_time" content="2026-09-27T14:20:32.711Z">
+<meta property="article:author" content="GRCorange">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://grcorange.github.io/images/md.png">
+  
+    <link rel="alternate" href="/atom.xml" title="GRCorange的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">GRCorange的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://grcorange.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-week1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/09/25/week1/" class="article-date">
+  <time class="dt-published" datetime="2026-09-25T07:19:18.000Z" itemprop="datePublished">2026-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      week1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-学习搜索语法"><a href="#1-学习搜索语法" class="headerlink" title="1.学习搜索语法"></a>1.学习搜索语法</h2><p>如精确匹配：“ ”，强制包含：+，AND,OR等。</p>
+<h2 id="2-ai-agent"><a href="#2-ai-agent" class="headerlink" title="2. ai agent"></a>2. ai agent</h2><p>我选的deepseek harness</p>
+<h2 id="3-markdown语法"><a href="#3-markdown语法" class="headerlink" title="3.markdown语法"></a>3.markdown语法</h2><p><img src="/./images/md.png"></p>
+<h2 id="4-Burp-Suite"><a href="#4-Burp-Suite" class="headerlink" title="4.Burp Suite"></a>4.Burp Suite</h2><p>我用的专业版，加上proxy swithyomegs MV3扩展，可以抓取edge上的请求。在bp的proxy中intercept拦截数据包后，可在HTTP history中分析代理的请求和响应，包括host，status code，length等关键数据，可以用repeater多次重发修改后请求，得到响应，分析漏洞，也可以用intruder进行自动化入侵爆破。</p>
+<h2 id="5-http协议"><a href="#5-http协议" class="headerlink" title="5.http协议"></a>5.http协议</h2><h6 id="1-http协议是浏览器和服务器之间交互的协议，是在应用层的协议，基于TCP连接方式"><a href="#1-http协议是浏览器和服务器之间交互的协议，是在应用层的协议，基于TCP连接方式" class="headerlink" title="1.http协议是浏览器和服务器之间交互的协议，是在应用层的协议，基于TCP连接方式"></a>1.http协议是浏览器和服务器之间交互的协议，是在应用层的协议，基于TCP连接方式</h6><h6 id="2-路径为http-IP地址或域名：端口（一般为80）-一堆参数，若没有，则为根路径，若有，一般是子路径"><a href="#2-路径为http-IP地址或域名：端口（一般为80）-一堆参数，若没有，则为根路径，若有，一般是子路径" class="headerlink" title="2.路径为http: &#x2F;&#x2F; IP地址或域名：端口（一般为80）&#x2F;一堆参数，若没有，则为根路径，若有，一般是子路径"></a>2.路径为http: &#x2F;&#x2F; IP地址或域名：端口（一般为80）&#x2F;一堆参数，若没有，则为根路径，若有，一般是子路径</h6><h6 id="3-http协议包括请求协议和响应协议，都有三部分，请求行（响应行），请求头（响应头），请求体（响应体，我的理解是返还的网页）"><a href="#3-http协议包括请求协议和响应协议，都有三部分，请求行（响应行），请求头（响应头），请求体（响应体，我的理解是返还的网页）" class="headerlink" title="3.http协议包括请求协议和响应协议，都有三部分，请求行（响应行），请求头（响应头），请求体（响应体，我的理解是返还的网页）"></a>3.http协议包括请求协议和响应协议，都有三部分，请求行（响应行），请求头（响应头），请求体（响应体，我的理解是返还的网页）</h6><h6 id="4-get只读取，不改变，提交的请求一般不放在请求体中，放在url之后，以？分割url和请求参数，请求参数以-连接；post触发处理。get具有幂等性，可缓存；post是不幂等的，默认不缓存。两者都是明文，不加密，没什么安全性，要依靠HTTPS保密"><a href="#4-get只读取，不改变，提交的请求一般不放在请求体中，放在url之后，以？分割url和请求参数，请求参数以-连接；post触发处理。get具有幂等性，可缓存；post是不幂等的，默认不缓存。两者都是明文，不加密，没什么安全性，要依靠HTTPS保密" class="headerlink" title="4.get只读取，不改变，提交的请求一般不放在请求体中，放在url之后，以？分割url和请求参数，请求参数以&amp;连接；post触发处理。get具有幂等性，可缓存；post是不幂等的，默认不缓存。两者都是明文，不加密，没什么安全性，要依靠HTTPS保密"></a>4.get只读取，不改变，提交的请求一般不放在请求体中，放在url之后，以？分割url和请求参数，请求参数以&amp;连接；post触发处理。get具有幂等性，可缓存；post是不幂等的，默认不缓存。两者都是明文，不加密，没什么安全性，要依靠HTTPS保密</h6><h6 id="5-常见请求头（由键值对构成）：host域名，connection连接方式，user-agent客户端信息，accept-charset声明客户端接收的字符集，referer记录请求来源的完整url（我认为就是上一个页面地址）"><a href="#5-常见请求头（由键值对构成）：host域名，connection连接方式，user-agent客户端信息，accept-charset声明客户端接收的字符集，referer记录请求来源的完整url（我认为就是上一个页面地址）" class="headerlink" title="5.常见请求头（由键值对构成）：host域名，connection连接方式，user-agent客户端信息，accept-charset声明客户端接收的字符集，referer记录请求来源的完整url（我认为就是上一个页面地址）"></a>5.常见请求头（由键值对构成）：host域名，connection连接方式，user-agent客户端信息，accept-charset声明客户端接收的字符集，referer记录请求来源的完整url（我认为就是上一个页面地址）</h6><h6 id="6-接口鉴权："><a href="#6-接口鉴权：" class="headerlink" title="6.接口鉴权："></a>6.接口鉴权：</h6><table>
+<thead>
+<tr>
+<th align="left">鉴权</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">cookie</td>
+<td align="left">服务器向客户端发送的小段文本数据，浏览器自动携带它，让服务器认出</td>
+</tr>
+<tr>
+<td align="left">jwt</td>
+<td align="left">将用户信息编码进令牌，拦截器自动在请求头书写token</td>
+</tr>
+<tr>
+<td align="left">session</td>
+<td align="left">用户登录后服务器保存对话数据并生成对应session id，以cookie形式发送客户端，后续以session id查找对话数据，对用户进行认证</td>
+</tr>
+</tbody></table>
+<h6 id="7-状态码"><a href="#7-状态码" class="headerlink" title="7.状态码"></a>7.状态码</h6><table>
+<thead>
+<tr>
+<th align="left">状态码</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">200</td>
+<td align="left">成功</td>
+</tr>
+<tr>
+<td align="left">302</td>
+<td align="left">资源迁移但请求仍使用原url</td>
+</tr>
+<tr>
+<td align="left">403</td>
+<td align="left">权限不足</td>
+</tr>
+<tr>
+<td align="left">500</td>
+<td align="left">服务器内部错误</td>
+</tr>
+<tr>
+<td align="left">502</td>
+<td align="left">网关或代理服务器无响应</td>
+</tr>
+<tr>
+<td align="left">504</td>
+<td align="left">网关或代理服务器响应超时</td>
+</tr>
+</tbody></table>
+<h2 id="6-前端"><a href="#6-前端" class="headerlink" title="6.前端"></a>6.前端</h2><h6 id="1-HTML：网页的骨架，定义网页内容"><a href="#1-HTML：网页的骨架，定义网页内容" class="headerlink" title="1.HTML：网页的骨架，定义网页内容"></a>1.HTML：网页的骨架，定义网页内容</h6><h6 id="2-CSS：美化网页，控制网页样式和布局"><a href="#2-CSS：美化网页，控制网页样式和布局" class="headerlink" title="2.CSS：美化网页，控制网页样式和布局"></a>2.CSS：美化网页，控制网页样式和布局</h6><h6 id="3-JS-动态交互，处理用户操作，与后端通信"><a href="#3-JS-动态交互，处理用户操作，与后端通信" class="headerlink" title="3.JS:动态交互，处理用户操作，与后端通信"></a>3.JS:动态交互，处理用户操作，与后端通信</h6><h2 id="7-devtools"><a href="#7-devtools" class="headerlink" title="7.devtools"></a>7.devtools</h2><table>
+<thead>
+<tr>
+<th>面板</th>
+<th>核心作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Elements 元素</td>
+<td>查看&#x2F;实时编辑页面的 HTML 结构与 CSS 样式；右侧为 Styles &#x2F; Computed &#x2F; Layout &#x2F; Event Listeners</td>
+</tr>
+<tr>
+<td>Console 控制台</td>
+<td>执行 JavaScript 查看报错与日志输出；console.log()的显示处，直接调 JS 验证 XSS、读取document.cookie、调用页面内部函数、调试混淆代码</td>
+</tr>
+<tr>
+<td>Sources 源代码</td>
+<td>查看所有加载的 JS&#x2F;CSS&#x2F;HTML 源码；下断点、单步调试、格式化压缩代码，JS 审计的核心：搜索关键字（eval，innerHTML，token）、下断点追踪加密逻辑、过前端校验</td>
+</tr>
+<tr>
+<td>Network 网络</td>
+<td>记录每个请求的 URL、方法、状态码、请求&#x2F;响应头、请求体、响应体、耗时，可以看 API 接口、参数、Token&#x2F;Cookie、找未授权接口、分析加密与签名参数</td>
+</tr>
+<tr>
+<td>Performance 性能</td>
+<td>录制并分析页面运行时性能（火焰图、帧率、CPU 占用）</td>
+</tr>
+<tr>
+<td>Memory 内存</td>
+<td>堆快照、内存分配时间线，排查内存泄漏</td>
+</tr>
+<tr>
+<td>Application 应用</td>
+<td>管理存储：Cookies &#x2F; localStorage &#x2F; sessionStorage &#x2F; IndexedDB &#x2F; Cache；Service Worker、Manifest</td>
+</tr>
+<tr>
+<td>Security 安全</td>
+<td>证书信息、TLS 版本、混合内容警告、HSTS 状态</td>
+</tr>
+<tr>
+<td>Recorder 录制器</td>
+<td>录制用户操作并回放、导出为自动化脚本</td>
+</tr>
+</tbody></table>
+<h6 id="对于devtools了解不是很深，这里是ai的生成的，目前只会看网络和元素的一些信息"><a href="#对于devtools了解不是很深，这里是ai的生成的，目前只会看网络和元素的一些信息" class="headerlink" title="对于devtools了解不是很深，这里是ai的生成的，目前只会看网络和元素的一些信息"></a>对于devtools了解不是很深，这里是ai的生成的，目前只会看网络和元素的一些信息</h6>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://grcorange.github.io/2026/09/25/week1/" data-id="cuidc0lLp-XVq1JWvDxQMmFe_" data-title="week1" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2026/09/11/%E4%BD%A0%E5%A5%BD/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">你好</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/09/">九月 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/09/25/week1/">week1</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/11/%E4%BD%A0%E5%A5%BD/">你好</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 GRCorange<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
